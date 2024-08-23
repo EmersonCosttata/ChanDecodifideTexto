@@ -1,0 +1,327 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: #F3F5FC;
+width: 100%;
+height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+}
+
+nav img{
+    width: 5em;
+    margin: 1.3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.todoapp{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.decobox{
+    padding: 1em;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50em;
+}
+.decobox div{
+flex-wrap: nowrap;
+}
+.decobox p{
+    color: #000000;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+}
+.decobox p img{
+    margin: 0.25em;
+    padding-right: 0.30rem;
+}
+.texttodecrip{
+    height: 28em;
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.texttodecrip::placeholder{
+    color: #000000;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cripito{
+    color:white;
+    padding: 1.25em 10em 1.25em 10em;
+    border-radius: .50rem;
+    border: 1.5px;
+    background-color: #000000 ;
+    border-color: #000000;
+    border-style: solid;
+    
+}
+
+.cripito:hover{
+    transition: 0.3s;
+    background-color: #000000c4 ;
+    border-color: #000000c4 ;
+
+}
+
+.descripito{
+    color:#000000;
+    padding: 1.25em 10em 1.25em 10em;
+    border-radius: .50rem;
+    background-color:#d9dbdf;
+    border: 1.5px;
+    border-color:  transparent;
+    border-style: solid;
+}
+
+.descripito:hover{
+    transition: 0.3s;
+    background-color: #bcbec2;
+}
+.textdeco{
+    margin: 1em;
+    margin-left: 3em;
+    margin-top: -7%;
+    height: 44rem;
+    width: 18em;
+    border-radius: 1em;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 6px 7px 0px rgba(0,0,0,0.33);
+}
+
+.textdeco textarea{
+    font-size: 1em;
+    height: 37em;
+    width: 16em;
+    background-color: white;
+    border: none;
+    border-radius: 1em;
+    font-size: 1em;
+    padding: 1em;
+}
+.textdeco button{
+    color:#000000;
+    font-weight: 600;
+    padding: 1.25em 6em 1.25em 6em;
+    border-radius: .50rem;
+    background-color:#d9dbdfe0;
+    border: 1.5px;
+    border-color:  transparent;
+    border-style: solid;
+}
+#areaDescripitrografarDIV{
+    text-align: center;
+}
+.textdeco button:hover{
+    transition: 0.3s;
+    background-color:#303131e0;
+    color:white;
+}
+#copysucess{
+    text-align:start;
+    margin: -0.55em;
+}
+.notfound{
+border-radius: 1em;
+height: 40em;
+}
+.notfoundtext{
+    margin-top: 1em;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    background-color: #000000;
+    color: white;
+}
+footer p{
+    text-align: center;
+    padding: 1em;
+}
+footer a{
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: rgba(255, 255, 255, 0.486);
+}
+
+
+@media (max-width: 700px ){
+    nav{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 95%;
+    }
+    nav img{
+        width: 4em;
+        margin: 1.5rem;
+    }
+
+    .todoapp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .decobox{
+        padding: 0;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        height: 10%;
+    }
+    .texttodecrip{
+        height: 13em;
+    }
+    .cripito, .descripito{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .textdeco{
+        margin: 0;
+        height: 16em;
+        width: 100%;
+        border-radius: 1em;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .textdeco textarea{
+        width: auto;
+        height: auto;
+        font-size: 1em;
+        padding: 0;
+        margin-bottom: 1em;
+
+    }
+    .textdeco button{
+       width: 100%;
+       margin-top: 1em;
+       margin-bottom: 1em;
+    }
+
+    .notfoundtext p{
+    margin: 1em;
+    }   
+    .notfound{
+        margin-top: 1em;
+        width:75%;
+        height:60%;
+        background: fixed;
+    }
+}
+
+    @media (max-width: 1024px) {
+        nav{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: 95%;
+        }
+        nav img{
+            width: 4em;
+            margin: 1.5rem;
+        }
+    
+        .todoapp{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+    
+        .decobox{
+            padding: 0;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            width: 100%;
+            height: 10%;
+        }
+        .texttodecrip{
+            height: 13em;
+        }
+        .texttodecrip div{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .cripito, .descripito{
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        
+        .textdeco{
+            margin: 0;
+            margin-left: 0;
+            margin-top: 0;
+            height: 35em;
+            width: 90%;
+            border-radius: 1em;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .btns{
+          display: flex;  
+        }
+        .textdeco textarea{
+            margin-top: 1em;
+            width:100%;
+            height: 25em;
+            font-size: 1em;
+            padding: 0;
+            margin-bottom: 1em;
+    
+        }
+        .textdeco button{
+           width: 85%;
+           margin-top: 1em;
+           margin-bottom: 1em;
+        }
+        .notfound{
+            margin-top: 1em;
+            width:55%;
+            height:50%;
+            background: fixed;
+        }
+  }

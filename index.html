@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/app.js" defer></script>
+    <title>Decodificador Desafio Emerson</title>
+</head>
+<body>
+<header>
+    <nav>
+        <img src='assets/logo.png'> <h1>Decodificador de Texto: Desafio</h1>
+    </nav>
+</header>
+<p style="display: none" id="copysucess">Copiado com sucesso!</p>
+        <div class="todoapp">
+            <div class="decobox">
+                <textarea class="texttodecrip" id="areaCripitrografar" placeholder="Digite seu Texto"></textarea>
+                <p><img src="./assets/excla.svg"> Apenas letras minúsculas e sem acento.</p>
+                <div class="btns">
+                    <button class="cripito" onclick="cripito()">Cripitrografar</button>
+                    <button class="descripito" onclick="descripito()">Descripitrografar</button>
+                </div>
+            </div>
+            <div class="textdeco" id="textdeco">
+                <div id="areaDescripitrografarDIV">
+                    <textarea id="areaDescripitrografar"></textarea>
+                    <button onclick="copy()">Copiar</button>
+                </div> 
+            </div>
+    </div>
+
+    <footer>
+        <p><a href="https://github.com/EmersonCosttata/">By Emerson Costa</a></p>
+    </footer>
+
+</body>
+</html>
